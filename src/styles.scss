@@ -1,0 +1,328 @@
+/*Table Content
+==========================
+    # General
+        - Fonts
+    # Links
+    # Headings
+    # Lists
+    # Images
+*/
+
+
+/* General
+======================= */
+/* Fonts */
+body{
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          font-family: 'Almarai', sans-serif;
+          direction: rtl;
+          text-align: right;
+          background-color: #faf5f2;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.main {
+  
+}
+/* Links
+==========================*/
+a, a:hover, a:focus{
+  text-decoration: none;
+}
+/* Headings 
+========================== */
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 0;
+}
+p{
+  margin: 0;
+}
+/*Lists
+==========================*/
+ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Images
+=========================== */
+input:focus,textarea:focus,select:focus,button:focus{outline: none;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+select:focus,.custom-select:focus{box-shadow: none;}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+input[type="text"]:disabled,
+button:disabled {
+  background: #dddddd !important;
+  cursor: no-drop !important;
+  color: #000 !important;
+  border: none !important;
+}
+
+input.input-error {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ec1613 !important;
+  border-color: #ec1613 !important;
+}
+.table th, .table td{vertical-align: middle;}
+/* Section Setting
+============================ */ 
+.section-lg{
+  padding: 50px 0;
+}
+.section-sm{padding: 15px 0;}
+.head-line{font-size: 20px;}
+/* Start Design
+============================ */ 
+$main_color: #2dace8;
+$main_color_transparent: #d9ede5;
+$bk_gray_color: #f9f9f9;
+$my_shadow: 0px 0px 12px -3px #e3e0e0;
+
+.bk-gray{background-color: $bk_gray_color;}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $main_color_transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $main_color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $main_color;
+}
+/* Start Header
+=================================== */
+.header{
+  padding: 10px 0;
+  background-color: $main_color;
+  color: #fff;
+  .notifications{
+      &::after{
+          content: '';
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background-color: red;
+          top: 0;
+          right: 7px;
+      }
+      i{font-size: 25px;}
+  }
+  .info{
+      p{font-size: 17px;}
+      span{
+          font-size: 13px;
+          margin-left: 7px;
+          &.active{color: #a3e199;}
+      }
+  }
+  form{
+      position: relative;
+      margin-top: 10px;
+      input{
+          background-color: #27a4db;
+          padding: 8px;
+          border: none;
+          border-radius: 5px;
+          width: 100%;
+          color: #fff;
+          &::placeholder{color: #ccc;}
+      }
+      i{
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          transform: translateY(-50%);
+          font-size: 20px;
+          color: #ccc;
+
+      }
+  }
+}
+/* Start teachers
+=================================== */
+.t-card{
+  border-radius: 15px;
+  margin: 7px;
+  .img-container{
+      position: relative;
+      min-height: 40px;
+      img{
+          width: 100%;
+          height: 130px;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+      }
+      .info{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: absolute;
+          width: 100%;
+          padding: 5px;
+          bottom: 0px;
+          background-color: rgba(116, 79, 200, 0.5);
+          font-size: 12px;
+          .rate{
+              background-color: rgba(116, 79, 200, 0.9);
+              border: 1px solid #ccc;
+              color: #ccc;
+              border-radius: 10px;
+              padding: 4px;
+              font-size: 11px;
+          }
+      }
+  }
+  .content{
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      background-color: #fff;
+      padding: 10px;
+      color: #000;
+      span{
+          color: #c7c7c7;
+          font-size: 11px;
+          &.location{font-size: 9px;}
+      }
+      i{color: #c7c7c7;}
+      .flex{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          p{
+              font-size: 11px;
+              &:last-of-type{color: $main_color;}
+          }
+      }
+      .price{
+          p{color: #000 !important;font-size: 15px;}
+      }
+      .times{
+          padding: 5px 0;
+          border-bottom: 1px solid #c7c7c7;
+          margin-bottom: 3px;
+          &:nth-of-type(2){border-bottom: none !important;}
+      }
+      button{
+          background-color: rgba(116, 79, 200, 1);
+          color: #fff;
+          border: none;
+          padding: 5px 8px;
+          border-top-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          font-size: 12px;
+          transition: all 0.3s ease-in-out;
+          &:hover{background-color: rgba(116, 79, 200, 0.8);}
+      }
+  }
+}
+.teachers{
+  background-color: $main_color;
+  color: #fff;
+  .teachers-slider{
+      margin: 15px 0;
+  }
+}
+.notification{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff7e3;
+  border: 1px solid #f1e2d3;
+  h6{color: #f8c477;}
+  i{color: #f8c477;font-size: 20px;}
+  p{margin: 10px 0;}
+  span{
+      font-size: 10px;
+      &:last-of-type{
+          color: $main_color;
+          i{font-size: 14px;color: $main_color;}
+      }
+  }
+}
+.about-app{
+  img{
+    width: 60px;height: 60px;
+    margin-right: 10px;
+  }
+  a{
+    color: $main_color;
+    font-size: 11px;
+    margin-top: 5px;
+  }
+}
+.popular{
+  .head-line{color: $main_color}
+}
+.popular-teacher{
+  margin: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #3A598545;
+  border-radius: 10px;
+  .about{
+    width: calc(100% - 40px);
+    img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    .teacher-info{
+      padding: 0 10px;
+      h6{font-size: 18px;font-weight: 600;}
+      p{color: #777777;}
+    }
+  }
+  .rate{
+    color: #fff;
+    background: #F49F27;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    i{
+      display: block;
+      font-size: 19px;
+    }
+  }
+  .global-info{
+    span{
+      color: #F44352;
+      font-size: 12px;
+    }
+  }
+}
+.tracking{
+  .head-line{color: $main_color;}
+}
+.near-sets{
+  .head-line{color: $main_color;}
+  .sets-slider{margin: 15px 0;}
+}

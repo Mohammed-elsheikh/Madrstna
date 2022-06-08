@@ -1,0 +1,458 @@
+/*Table Content
+==========================
+    # General
+        - Fonts
+    # Links
+    # Headings
+    # Lists
+    # Images
+*/
+/* General
+======================= */
+/* Fonts */
+body {
+  font-size: 15px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Almarai', sans-serif;
+  direction: rtl;
+  text-align: right;
+  background-color: #faf5f2;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Links
+==========================*/
+a, a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* Headings 
+========================== */
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/*Lists
+==========================*/
+ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Images
+=========================== */
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select:focus, .custom-select:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input[type="text"]:disabled,
+button:disabled {
+  background: #dddddd !important;
+  cursor: no-drop !important;
+  color: #000 !important;
+  border: none !important;
+}
+
+input.input-error {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ec1613 !important;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ec1613 !important;
+  border-color: #ec1613 !important;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+/* Section Setting
+============================ */
+.section-lg {
+  padding: 50px 0;
+}
+
+.section-sm {
+  padding: 15px 0;
+}
+
+.head-line {
+  font-size: 20px;
+}
+
+/* Start Design
+============================ */
+.bk-gray {
+  background-color: #f9f9f9;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d9ede5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2dace8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2dace8;
+}
+
+/* Start Header
+=================================== */
+.header {
+  padding: 10px 0;
+  background-color: #2dace8;
+  color: #fff;
+}
+
+.header .notifications::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: red;
+  top: 0;
+  right: 7px;
+}
+
+.header .notifications i {
+  font-size: 25px;
+}
+
+.header .info p {
+  font-size: 17px;
+}
+
+.header .info span {
+  font-size: 13px;
+  margin-left: 7px;
+}
+
+.header .info span.active {
+  color: #a3e199;
+}
+
+.header form {
+  position: relative;
+  margin-top: 10px;
+}
+
+.header form input {
+  background-color: #27a4db;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+}
+
+.header form input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.header form input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.header form input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.header form input::placeholder {
+  color: #ccc;
+}
+
+.header form i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+  color: #ccc;
+}
+
+/* Start teachers
+=================================== */
+.t-card {
+  border-radius: 15px;
+  margin: 7px;
+}
+
+.t-card .img-container {
+  position: relative;
+  min-height: 40px;
+}
+
+.t-card .img-container img {
+  width: 100%;
+  height: 130px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.t-card .img-container .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 5px;
+  bottom: 0px;
+  background-color: rgba(116, 79, 200, 0.5);
+  font-size: 12px;
+}
+
+.t-card .img-container .info .rate {
+  background-color: rgba(116, 79, 200, 0.9);
+  border: 1px solid #ccc;
+  color: #ccc;
+  border-radius: 10px;
+  padding: 4px;
+  font-size: 11px;
+}
+
+.t-card .content {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #fff;
+  padding: 10px;
+  color: #000;
+}
+
+.t-card .content span {
+  color: #c7c7c7;
+  font-size: 11px;
+}
+
+.t-card .content span.location {
+  font-size: 9px;
+}
+
+.t-card .content i {
+  color: #c7c7c7;
+}
+
+.t-card .content .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.t-card .content .flex p {
+  font-size: 11px;
+}
+
+.t-card .content .flex p:last-of-type {
+  color: #2dace8;
+}
+
+.t-card .content .price p {
+  color: #000 !important;
+  font-size: 15px;
+}
+
+.t-card .content .times {
+  padding: 5px 0;
+  border-bottom: 1px solid #c7c7c7;
+  margin-bottom: 3px;
+}
+
+.t-card .content .times:nth-of-type(2) {
+  border-bottom: none !important;
+}
+
+.t-card .content button {
+  background-color: #744fc8;
+  color: #fff;
+  border: none;
+  padding: 5px 8px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.t-card .content button:hover {
+  background-color: rgba(116, 79, 200, 0.8);
+}
+
+.teachers {
+  background-color: #2dace8;
+  color: #fff;
+}
+
+.teachers .teachers-slider {
+  margin: 15px 0;
+}
+
+.notification {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff7e3;
+  border: 1px solid #f1e2d3;
+}
+
+.notification h6 {
+  color: #f8c477;
+}
+
+.notification i {
+  color: #f8c477;
+  font-size: 20px;
+}
+
+.notification p {
+  margin: 10px 0;
+}
+
+.notification span {
+  font-size: 10px;
+}
+
+.notification span:last-of-type {
+  color: #2dace8;
+}
+
+.notification span:last-of-type i {
+  font-size: 14px;
+  color: #2dace8;
+}
+
+.about-app img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.about-app a {
+  color: #2dace8;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.popular .head-line {
+  color: #2dace8;
+}
+
+.popular-teacher {
+  margin: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #3A598545;
+  border-radius: 10px;
+}
+
+.popular-teacher .about {
+  width: calc(100% - 40px);
+}
+
+.popular-teacher .about img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.popular-teacher .about .teacher-info {
+  padding: 0 10px;
+}
+
+.popular-teacher .about .teacher-info h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.popular-teacher .about .teacher-info p {
+  color: #777777;
+}
+
+.popular-teacher .rate {
+  color: #fff;
+  background: #F49F27;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popular-teacher .rate i {
+  display: block;
+  font-size: 19px;
+}
+
+.popular-teacher .global-info span {
+  color: #F44352;
+  font-size: 12px;
+}
+
+.tracking .head-line {
+  color: #2dace8;
+}
+
+.near-sets .head-line {
+  color: #2dace8;
+}
+
+.near-sets .sets-slider {
+  margin: 15px 0;
+}
+/*# sourceMappingURL=styles.css.map */

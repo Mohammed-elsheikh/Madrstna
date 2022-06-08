@@ -1,0 +1,71 @@
+<section class="teachers section-sm">
+        <div class="container">
+            <h1 class="head-line">المجموعات المقترحة</h1>
+            <ngx-slick-carousel class="teachers-slider" 
+                        #slickModal="slick-carousel" 
+                        [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let teacher of teachers" class="slide">
+                    <app-cart [teacher]="teacher"></app-cart>
+                </div>
+            </ngx-slick-carousel>
+        </div>
+</section>
+<section class="section-sm">
+    <div class="container">
+        <div class="notification">
+            <div class="d-flex justify-content-between align-items-center">
+                <h6>المجموعة القادمة</h6>
+                <i class='bx bxs-bell-ring'></i>
+            </div>
+            <p>لديك حصة لغة عربية بمدرسة طوخ الثانوية بنين, كن مستعد</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <span>اليوم2 اكتوبر الساعة 1:00 م</span>
+                <span>
+                    <i class='bx bxs-map'></i>
+                    واصلى
+                </span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about-app section-sm">
+    <div class="container">
+        <div class="d-flex justify-content-between">
+            <div>
+                <p>يمكنك الاطلاع على مراجعة اللغة العربية اون لاين من خلال تطبيق مدرستنا</p>
+                <a href="#">حمل تطبيق مدرستنا من هنا</a>
+            </div>
+            <img alt="sd" src="../../assets/images/person-03.jpg">
+        </div>
+    </div>
+</section>
+<section class="popular section-sm">
+    <div class="container">
+        <h1 class="head-line">المدرسين الاكثر شعبية</h1>
+        <ngx-slick-carousel class="popular-teachers-slider" 
+            #slickModal="slick-carousel" 
+            [config]="popularSlideConfig">
+            <div ngxSlickItem *ngFor="let teacher of teachers" class="slide">
+                <app-popular-cart [teacher]="teacher"></app-popular-cart>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</section>
+<section class="near-sets section-sm">
+    <div class="container">
+        <h1 class="head-line">مجموعات قريبة منك</h1>
+        <ngx-slick-carousel class="sets-slider" 
+                    #slickModal="slick-carousel" 
+                    [config]="setsConfig">
+            <div ngxSlickItem *ngFor="let teacher of sets" class="slide">
+                <app-cart [teacher]="teacher"></app-cart>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</section>
+<section class="tracking section-sm">
+    <div class="container">
+        <h1 class="head-line">متابعة تقييم الاداء</h1>
+        <p class="my-3">يمكنك الاطلاع على تقييم الاداء الخاص بك فى المجموعات الذى تم الاشتراك بها</p>
+    </div>
+</section>

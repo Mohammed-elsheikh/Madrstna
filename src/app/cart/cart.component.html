@@ -1,0 +1,38 @@
+<div class="t-card">
+    <div class="img-container">
+            <img alt="teacher" src="{{teacher.img}}" [hidden]="!teacher.img">
+            <div class="info">
+                <p>{{teacher.name}}</p>
+                <div class="rate">
+                    <i class='bx bx-star'></i>
+                    {{teacher.rate}}
+                </div>
+            </div>
+    </div> 
+    <div class="content">
+            <h6>{{teacher.subject}}</h6>
+            <span>المواعيد</span>
+            <div class="flex times">
+                <p>الخميس</p>
+                <p>9.00 م</p>
+            </div>
+            <div class="flex times">
+                <p>الثلاثاء</p>
+                <p>7.00 م</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <span class="location">{{teacher.location}}</span>
+                <i class='bx bxs-map'></i>
+            </div>
+            <div class="flex">
+                <div class="price">
+                    <span>سعر الحصة</span>
+                    <p>
+                        {{teacher.price}}
+                        <span>ج.م</span>
+                    </p>
+                </div>
+                <button>احجز الان</button>
+            </div>
+    </div>
+</div>
