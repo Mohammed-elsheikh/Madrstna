@@ -8,6 +8,7 @@ import { HeaderComponent } from './layout/header.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { PopularCartComponent } from './popular-cart/popular-cart.component';
+import { NavbarComponent } from './layout/navbar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PopularCartComponent } from './popular-cart/popular-cart.component';
     HeaderComponent,
     HomeComponent,
     CartComponent,
-    PopularCartComponent
+    PopularCartComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

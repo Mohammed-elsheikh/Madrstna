@@ -92,6 +92,7 @@ export class HomeComponent implements OnInit {
       name: 'أ.رائد محمد المصرى',
       rate: 5.5,
       subject: 'دراسات اجتماعية',
+      subjectEnum: 1,
       location: 'مدرسة طوخ الاعدادية بنين',
       price: 50
     },
@@ -99,28 +100,34 @@ export class HomeComponent implements OnInit {
       name: 'أ.محمد عمر',
       rate: 4.5,
       subject: 'لغة عربية',
+      subjectEnum: 2,
       location: 'مدرسة طوخ الاعدادية بنين',
       price: 60
     },
     {
       name: 'أ.محمد عمر',
       rate: 4.0,
-      subject: 'لغة عربية',
+      subject: 'لغة إنجليزية',
+      subjectEnum: 3,
       location: 'مدرسة طوخ الاعدادية بنين',
       price: 40
     },
     {
       name: 'أ.محمد عمر',
       rate: 3.5,
-      subject: 'لغة عربية',
+      subject: 'علوم',
+      subjectEnum: 4,
       location: 'مدرسة طوخ الاعدادية بنين',
       price: 30
     }
   ];
-
+  
+  filterValue: number = 0;
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  changeFilterVal(filterValue: number){
+    this.filterValue = filterValue;
+  }
 }

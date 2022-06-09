@@ -54,13 +54,24 @@
 <section class="near-sets section-sm">
     <div class="container">
         <h1 class="head-line">مجموعات قريبة منك</h1>
-        <ngx-slick-carousel class="sets-slider" 
-                    #slickModal="slick-carousel" 
-                    [config]="setsConfig">
-            <div ngxSlickItem *ngFor="let teacher of sets" class="slide">
-                <app-cart [teacher]="teacher"></app-cart>
-            </div>
-        </ngx-slick-carousel>
+        <ul class="nav-tabs">
+           <li (click)="changeFilterVal(0)" [ngClass]="{'active': filterValue==0}">الكل</li>
+           <li (click)="changeFilterVal(3)" [ngClass]="{'active': filterValue==3}">اللغة الانجليزية</li>
+           <li (click)="changeFilterVal(1)" [ngClass]="{'active': filterValue==1}">الدراسات الاجتماعية</li>
+           <li (click)="changeFilterVal(4)" [ngClass]="{'active': filterValue==4}">العلوم</li>
+        </ul>
+        <div class="tab-content">
+            <ngx-slick-carousel class="sets-slider" 
+                        #slickModal="slick-carousel" 
+                        [config]="setsConfig">
+                <div ngxSlickItem *ngFor="let teacher of sets" class="slide">
+                    <app-cart [teacher]="teacher" class="tab-pane fade"
+                    [ngClass]="{'show active in': filterValue==teacher.subjectEnum||filterValue==0}">
+
+                    </app-cart>
+                </div>
+            </ngx-slick-carousel>
+        </div>
     </div>
 </section>
 <section class="tracking section-sm">

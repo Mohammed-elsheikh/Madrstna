@@ -28,7 +28,7 @@ body{
   overflow: hidden;
 }
 .main {
-  
+  padding-bottom: 45px;
 }
 /* Links
 ==========================*/
@@ -325,4 +325,59 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
 .near-sets{
   .head-line{color: $main_color;}
   .sets-slider{margin: 15px 0;}
+  .nav-tabs{
+    border-bottom: none;
+    display: flex;
+    margin: 15px 0;
+    li{
+      font-size: 11px;
+      margin-left: 10px;
+      color: #ACACAC;
+      &.active{
+        color: $main_color;
+        position: relative;
+        &::after{
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          content: '';
+          bottom: -7px;
+          left: 50%;
+          background-color: $main_color;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  background-color: $main_color;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0px 0px 11px 1px #b7b5b5;
+  a{
+    margin: 0 30px;
+    color: #fff !important;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &.active{
+      &::after{
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        content: '';
+        background-color: #fff;
+        left: 45%;
+        top: -5px;
+      }
+    }
+    i{font-size: 20px;}
+  }
 }
