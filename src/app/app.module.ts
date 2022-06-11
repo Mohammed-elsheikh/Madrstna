@@ -10,7 +10,6 @@ import { CartComponent } from './cart/cart.component';
 import { PopularCartComponent } from './popular-cart/popular-cart.component';
 import { NavbarComponent } from './layout/navbar.component';
 import { RateChartComponent } from './rate-chart/rate-chart.component';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule,
-    NgxChartsModule
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

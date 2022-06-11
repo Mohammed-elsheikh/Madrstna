@@ -89,7 +89,7 @@ input.input-error {
 .head-line{font-size: 20px;}
 /* Start Design
 ============================ */ 
-$main_color: #2dace8;
+$main_color: #2CAEE8;
 $main_color_transparent: #d9ede5;
 $bk_gray_color: #f9f9f9;
 $my_shadow: 0px 0px 12px -3px #e3e0e0;
@@ -263,7 +263,8 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
 }
 .about-app{
   img{
-    width: 60px;height: 60px;
+    width: 43px;
+    height: 57px;
     margin-right: 10px;
   }
   a{
@@ -284,8 +285,8 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
   .about{
     width: calc(100% - 40px);
     img{
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
     }
     .teacher-info{
@@ -297,20 +298,44 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
   .rate{
     color: #fff;
     background: #F49F27;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: 12px;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    font-size: 9px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 10px;
     i{
       display: block;
-      font-size: 19px;
+      font-size: 10px;
     }
   }
   .global-info{
+    margin-top: 5px;
     span{
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 20px;
+     margin-left: 7px;
+     display: inline-block;
+     font-size: 11px;
+      &.gift{
+        color: #FB8E34;
+        border: 1px solid #FB8E34;
+      }
+      &.bell{
+        color: #F44352;
+        border: 1px solid #F44352;
+      }
+      &.time{
+        color: #2CAEE8;
+        border: 1px solid #2CAEE8;
+      } 
+    }
+    .experince{
       color: #F44352;
       font-size: 12px;
     }
@@ -344,6 +369,15 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
           position: absolute;
         }
       }
+    }
+  }
+  .near-sets-items{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    .near-sets-item{
+      width: 50%;
+      min-width: 50%;
     }
   }
 }

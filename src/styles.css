@@ -128,19 +128,19 @@ input.input-error {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2dace8;
+  background: #2CAEE8;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #2dace8;
+  background: #2CAEE8;
 }
 
 /* Start Header
 =================================== */
 .header {
   padding: 10px 0;
-  background-color: #2dace8;
+  background-color: #2CAEE8;
   color: #fff;
 }
 
@@ -298,7 +298,7 @@ input.input-error {
 }
 
 .t-card .content .flex p:last-of-type {
-  color: #2dace8;
+  color: #2CAEE8;
 }
 
 .t-card .content .price p {
@@ -331,7 +331,7 @@ input.input-error {
 }
 
 .teachers {
-  background-color: #2dace8;
+  background-color: #2CAEE8;
   color: #fff;
 }
 
@@ -364,28 +364,28 @@ input.input-error {
 }
 
 .notification span:last-of-type {
-  color: #2dace8;
+  color: #2CAEE8;
 }
 
 .notification span:last-of-type i {
   font-size: 14px;
-  color: #2dace8;
+  color: #2CAEE8;
 }
 
 .about-app img {
-  width: 60px;
-  height: 60px;
+  width: 43px;
+  height: 57px;
   margin-right: 10px;
 }
 
 .about-app a {
-  color: #2dace8;
+  color: #2CAEE8;
   font-size: 11px;
   margin-top: 5px;
 }
 
 .popular .head-line {
-  color: #2dace8;
+  color: #2CAEE8;
 }
 
 .popular-teacher {
@@ -401,8 +401,8 @@ input.input-error {
 }
 
 .popular-teacher .about img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -422,10 +422,10 @@ input.input-error {
 .popular-teacher .rate {
   color: #fff;
   background: #F49F27;
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  font-size: 12px;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  font-size: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,24 +436,55 @@ input.input-error {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10px;
 }
 
 .popular-teacher .rate i {
   display: block;
-  font-size: 19px;
+  font-size: 10px;
+}
+
+.popular-teacher .global-info {
+  margin-top: 5px;
 }
 
 .popular-teacher .global-info span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 7px;
+  display: inline-block;
+  font-size: 11px;
+}
+
+.popular-teacher .global-info span.gift {
+  color: #FB8E34;
+  border: 1px solid #FB8E34;
+}
+
+.popular-teacher .global-info span.bell {
+  color: #F44352;
+  border: 1px solid #F44352;
+}
+
+.popular-teacher .global-info span.time {
+  color: #2CAEE8;
+  border: 1px solid #2CAEE8;
+}
+
+.popular-teacher .global-info .experince {
   color: #F44352;
   font-size: 12px;
 }
 
 .tracking .head-line {
-  color: #2dace8;
+  color: #2CAEE8;
 }
 
 .near-sets .head-line {
-  color: #2dace8;
+  color: #2CAEE8;
 }
 
 .near-sets .sets-slider {
@@ -475,7 +506,7 @@ input.input-error {
 }
 
 .near-sets .nav-tabs li.active {
-  color: #2dace8;
+  color: #2CAEE8;
   position: relative;
 }
 
@@ -486,8 +517,21 @@ input.input-error {
   content: '';
   bottom: -7px;
   left: 50%;
-  background-color: #2dace8;
+  background-color: #2CAEE8;
   position: absolute;
+}
+
+.near-sets .near-sets-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.near-sets .near-sets-items .near-sets-item {
+  width: 50%;
+  min-width: 50%;
 }
 
 nav {
@@ -496,7 +540,7 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #2dace8;
+  background-color: #2CAEE8;
   padding: 10px;
   position: fixed;
   bottom: 0;

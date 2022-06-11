@@ -61,15 +61,13 @@
            <li (click)="changeFilterVal(4)" [ngClass]="{'active': filterValue==4}">العلوم</li>
         </ul>
         <div class="tab-content">
-            <ngx-slick-carousel class="sets-slider" 
-                        #slickModal="slick-carousel" 
-                        [config]="setsConfig">
-                <div ngxSlickItem *ngFor="let teacher of sets" class="slide" 
-                    [hidden]="filterValue!=teacher.subjectEnum">
+            <div class="near-sets-items">
+                <div class="near-sets-item" *ngFor="let teacher of sets"
+                    [hidden]="teacher.subjectEnum!=filterValue && filterValue!=0">
                     <app-cart [teacher]="teacher" class="tab-pane fade show active in">
                     </app-cart>
                 </div>
-            </ngx-slick-carousel>
+            </div>
         </div>
     </div>
 </section>

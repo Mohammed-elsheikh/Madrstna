@@ -122,5 +122,7 @@
       }
     }
   },
-  "defaultProject": "appenza-task"
+  "cli": {
+    "analytics": "202dcc86-b1be-47c1-b2d8-ab686bd3c32a"
+  }
 }
