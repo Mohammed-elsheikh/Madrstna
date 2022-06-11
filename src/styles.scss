@@ -174,9 +174,9 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
       min-height: 40px;
       img{
           width: 100%;
-          height: 130px;
-          border-top-left-radius: 15px;
-          border-top-right-radius: 15px;
+          height: 117px;
+          border-top-left-radius: 18px;
+          border-top-right-radius: 18px;
       }
       .info{
           display: flex;
@@ -186,12 +186,11 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
           width: 100%;
           padding: 5px;
           bottom: 0px;
-          background-color: rgba(116, 79, 200, 0.5);
           font-size: 12px;
+          p{color: #fff;}
           .rate{
-              background-color: rgba(116, 79, 200, 0.9);
-              border: 1px solid #ccc;
-              color: #ccc;
+              border: 1px solid #fff;
+              color: #fff;
               border-radius: 10px;
               padding: 4px;
               font-size: 11px;
@@ -199,8 +198,8 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
       }
   }
   .content{
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
       background-color: #fff;
       padding: 10px;
       color: #000;
@@ -229,15 +228,13 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
           &:nth-of-type(2){border-bottom: none !important;}
       }
       button{
-          background-color: rgba(116, 79, 200, 1);
           color: #fff;
           border: none;
           padding: 5px 8px;
-          border-top-right-radius: 10px;
-          border-bottom-left-radius: 10px;
+          border-radius: 0px 4px 0px 7px;
           font-size: 12px;
           transition: all 0.3s ease-in-out;
-          &:hover{background-color: rgba(116, 79, 200, 0.8);}
+          &:hover{opacity: 0.9;}
       }
   }
 }

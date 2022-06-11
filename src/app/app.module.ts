@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { PopularCartComponent } from './popular-cart/popular-cart.component';
 import { NavbarComponent } from './layout/navbar.component';
+import { RateChartComponent } from './rate-chart/rate-chart.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { NavbarComponent } from './layout/navbar.component';
     HomeComponent,
     CartComponent,
     PopularCartComponent,
-    NavbarComponent
+    NavbarComponent,
+    RateChartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

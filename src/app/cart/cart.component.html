@@ -1,9 +1,9 @@
 <div class="t-card">
     <div class="img-container">
             <img alt="teacher" src="{{teacher.img}}" [hidden]="!teacher.img">
-            <div class="info">
+            <div class="info" [style.background]="newRgba">
                 <p>{{teacher.name}}</p>
-                <div class="rate">
+                <div class="rate" [style.background]="teacher.color">
                     <i class='bx bx-star'></i>
                     {{teacher.rate}}
                 </div>
@@ -32,7 +32,7 @@
                         <span>ج.م</span>
                     </p>
                 </div>
-                <button>احجز الان</button>
+                <button [style.background]="teacher.color">احجز الان</button>
             </div>
     </div>
 </div>

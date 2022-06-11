@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SetsDto } from './home-service';
 
 @Component({
   selector: 'app-home',
@@ -53,72 +54,88 @@ export class HomeComponent implements OnInit {
         }
     ]
   }
-  teachers:any[]=[
+  teachers:SetsDto[]=[
     {
       img:'../../assets/images/person-03.jpg',
       name: 'أ.رائد محمد المصرى',
       rate: 5.5,
       subject: 'دراسات اجتماعية',
+      subjectEnum: undefined,
       location: 'مدرسة طوخ الاعدادية بنين',
-      price: 50
+      price: 50,
+      color: '#F49F27'
     },
     {
       img:'../../assets/images/person-03.jpg',
       name: 'أ.محمد عمر',
       rate: 4.5,
-      subject: 'لغة عربية',
+      subject: 'لغة انجليزية',
+      subjectEnum: undefined,
       location: 'مدرسة طوخ الاعدادية بنين',
-      price: 60
+      price: 60,
+      color: '#1FB380'
     },
     {
       img:'../../assets/images/person-03.jpg',
       name: 'أ.محمد عمر',
       rate: 4.0,
       subject: 'لغة عربية',
+      subjectEnum: undefined,
       location: 'مدرسة طوخ الاعدادية بنين',
-      price: 40
+      price: 40,
+      color: '#754DCC'
     },
     {
       img:'../../assets/images/person-03.jpg',
       name: 'أ.محمد عمر',
       rate: 3.5,
       subject: 'لغة عربية',
+      subjectEnum: undefined,
       location: 'مدرسة طوخ الاعدادية بنين',
-      price: 30
+      price: 30,
+      color: '#754DCC'
     }
   ];
-  sets:any[]=[
+  sets:SetsDto[]=[
     {
+      img: undefined,
       name: 'أ.رائد محمد المصرى',
       rate: 5.5,
       subject: 'دراسات اجتماعية',
       subjectEnum: 1,
       location: 'مدرسة طوخ الاعدادية بنين',
-      price: 50
+      price: 50,
+      color: '#F49F27'
     },
     {
+      img: undefined,
       name: 'أ.محمد عمر',
       rate: 4.5,
       subject: 'لغة عربية',
       subjectEnum: 2,
       location: 'مدرسة طوخ الاعدادية بنين',
-      price: 60
+      price: 60,
+      color: '#754DCC'
     },
     {
+      img: undefined,
       name: 'أ.محمد عمر',
       rate: 4.0,
       subject: 'لغة إنجليزية',
       subjectEnum: 3,
       location: 'مدرسة طوخ الاعدادية بنين',
-      price: 40
+      price: 40,
+      color: '#1FB380'
     },
     {
+      img: undefined,
       name: 'أ.محمد عمر',
       rate: 3.5,
       subject: 'علوم',
       subjectEnum: 4,
       location: 'مدرسة طوخ الاعدادية بنين',
-      price: 30
+      price: 30,
+      color: '#754DCC'
     }
   ];
   

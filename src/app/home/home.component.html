@@ -64,10 +64,9 @@
             <ngx-slick-carousel class="sets-slider" 
                         #slickModal="slick-carousel" 
                         [config]="setsConfig">
-                <div ngxSlickItem *ngFor="let teacher of sets" class="slide">
-                    <app-cart [teacher]="teacher" class="tab-pane fade"
-                    [ngClass]="{'show active in': filterValue==teacher.subjectEnum||filterValue==0}">
-
+                <div ngxSlickItem *ngFor="let teacher of sets" class="slide" 
+                    [hidden]="filterValue!=teacher.subjectEnum">
+                    <app-cart [teacher]="teacher" class="tab-pane fade show active in">
                     </app-cart>
                 </div>
             </ngx-slick-carousel>
@@ -78,5 +77,6 @@
     <div class="container">
         <h1 class="head-line">متابعة تقييم الاداء</h1>
         <p class="my-3">يمكنك الاطلاع على تقييم الاداء الخاص بك فى المجموعات الذى تم الاشتراك بها</p>
+        <app-rate-chart></app-rate-chart>
     </div>
 </section>
