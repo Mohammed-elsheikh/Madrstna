@@ -395,6 +395,8 @@ input.input-error {
   width: 43px;
   height: 57px;
   margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-app p {
@@ -496,6 +498,7 @@ input.input-error {
 .popular-teacher .global-info span.time {
   color: #2CAEE8;
   border: 1px solid #2CAEE8;
+  font-size: 10px;
 }
 
 .popular-teacher .global-info .experince {
@@ -764,5 +767,34 @@ nav a i {
   display: block;
   text-align: center;
   margin: 10px 0;
+}
+
+@media (min-width: 1200px) {
+  .near-sets .near-sets-items .near-sets-item {
+    width: 25%;
+    min-width: 25%;
+  }
+  .t-card .content .flex p {
+    font-size: 11px;
+  }
+  .t-card .content .flex p:last-of-type {
+    font-size: 12px;
+  }
+  .t-card .content span {
+    font-size: 12px;
+  }
+  .t-card .content span.location {
+    font-size: 10px;
+  }
+  .rate-table .rate-content .subject-info p {
+    font-size: 17px;
+  }
+  .rate-table .rate-content .subject-info span {
+    font-size: 12px !important;
+  }
+  .about-app img {
+    width: 60px;
+    height: 70px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
