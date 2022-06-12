@@ -10,6 +10,7 @@ import { CartComponent } from './cart/cart.component';
 import { PopularCartComponent } from './popular-cart/popular-cart.component';
 import { NavbarComponent } from './layout/navbar.component';
 import { RateChartComponent } from './rate-chart/rate-chart.component';
+import { NgApexchartsModule } from "ng-apexcharts";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RateChartComponent } from './rate-chart/rate-chart.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgApexchartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

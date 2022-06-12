@@ -14,7 +14,7 @@ body {
   font-size: 15px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Almarai', sans-serif;
+  font-family: 'Cairo', sans-serif;
   direction: rtl;
   text-align: right;
   background-color: #faf5f2;
@@ -108,7 +108,7 @@ input.input-error {
 }
 
 .head-line {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /* Start Design
@@ -160,11 +160,11 @@ input.input-error {
 }
 
 .header .info p {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .header .info span {
-  font-size: 13px;
+  font-size: 12px;
   margin-left: 7px;
 }
 
@@ -229,6 +229,8 @@ input.input-error {
   height: 117px;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .t-card .img-container .info {
@@ -250,17 +252,24 @@ input.input-error {
 
 .t-card .img-container .info p {
   color: #fff;
+  font-size: 12px;
 }
 
 .t-card .img-container .info .rate {
   border: 1px solid #fff;
   color: #fff;
   border-radius: 10px;
-  padding: 4px;
-  font-size: 11px;
+  padding: 0;
+  width: 40px;
+  height: 18px;
+  text-align: center;
+  font-size: 8px;
+  line-height: 18px;
 }
 
 .t-card .content {
+  -webkit-box-shadow: 0px 3px 9px #00000029;
+          box-shadow: 0px 3px 9px #00000029;
   border-bottom-left-radius: 18px;
   border-bottom-right-radius: 18px;
   background-color: #fff;
@@ -268,13 +277,18 @@ input.input-error {
   color: #000;
 }
 
+.t-card .content h6 {
+  font-size: 14px;
+}
+
 .t-card .content span {
   color: #c7c7c7;
-  font-size: 11px;
+  font-size: 9px;
 }
 
 .t-card .content span.location {
-  font-size: 9px;
+  font-size: 7px;
+  font-family: 'Almarai', sans-serif;
 }
 
 .t-card .content i {
@@ -294,16 +308,17 @@ input.input-error {
 }
 
 .t-card .content .flex p {
-  font-size: 11px;
+  font-size: 6px;
 }
 
 .t-card .content .flex p:last-of-type {
   color: #2CAEE8;
+  font-size: 7px;
 }
 
 .t-card .content .price p {
   color: #000 !important;
-  font-size: 15px;
+  font-size: 16px !important;
 }
 
 .t-card .content .times {
@@ -324,6 +339,7 @@ input.input-error {
   font-size: 12px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  font-family: 'Almarai', sans-serif;
 }
 
 .t-card .content button:hover {
@@ -348,6 +364,7 @@ input.input-error {
 
 .notification h6 {
   color: #f8c477;
+  font-size: 16px;
 }
 
 .notification i {
@@ -357,6 +374,8 @@ input.input-error {
 
 .notification p {
   margin: 10px 0;
+  font-size: 14px;
+  font-family: 'Almarai', sans-serif;
 }
 
 .notification span {
@@ -378,9 +397,14 @@ input.input-error {
   margin-right: 10px;
 }
 
+.about-app p {
+  font-size: 14px;
+  font-family: 'Almarai', sans-serif;
+}
+
 .about-app a {
   color: #2CAEE8;
-  font-size: 11px;
+  font-size: 10px;
   margin-top: 5px;
 }
 
@@ -411,12 +435,12 @@ input.input-error {
 }
 
 .popular-teacher .about .teacher-info h6 {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
 }
 
 .popular-teacher .about .teacher-info p {
   color: #777777;
+  font-size: 12px;
 }
 
 .popular-teacher .rate {
@@ -476,7 +500,8 @@ input.input-error {
 
 .popular-teacher .global-info .experince {
   color: #F44352;
-  font-size: 12px;
+  font-size: 10px;
+  font-family: 'Almarai', sans-serif;
 }
 
 .tracking .head-line {
@@ -500,7 +525,7 @@ input.input-error {
 }
 
 .near-sets .nav-tabs li {
-  font-size: 11px;
+  font-size: 14px;
   margin-left: 10px;
   color: #ACACAC;
 }
@@ -529,6 +554,10 @@ input.input-error {
   overflow-y: hidden;
 }
 
+.near-sets .near-sets-items::-webkit-scrollbar {
+  display: none;
+}
+
 .near-sets .near-sets-items .near-sets-item {
   width: 50%;
   min-width: 50%;
@@ -547,8 +576,8 @@ nav {
   left: 0;
   width: 100%;
   z-index: 999;
-  -webkit-box-shadow: 0px 0px 11px 1px #b7b5b5;
-          box-shadow: 0px 0px 11px 1px #b7b5b5;
+  -webkit-box-shadow: 0px -6px 25px #1C283780;
+          box-shadow: 0px -6px 25px #1C283780;
 }
 
 nav a {

@@ -17,7 +17,7 @@ body{
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-          font-family: 'Almarai', sans-serif;
+          font-family: 'Cairo', sans-serif;
           direction: rtl;
           text-align: right;
           background-color: #faf5f2;
@@ -86,7 +86,7 @@ input.input-error {
   padding: 50px 0;
 }
 .section-sm{padding: 15px 0;}
-.head-line{font-size: 20px;}
+.head-line{font-size: 22px;}
 /* Start Design
 ============================ */ 
 $main_color: #2CAEE8;
@@ -134,9 +134,9 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
       i{font-size: 25px;}
   }
   .info{
-      p{font-size: 17px;}
+      p{font-size: 16px;}
       span{
-          font-size: 13px;
+          font-size: 12px;
           margin-left: 7px;
           &.active{color: #a3e199;}
       }
@@ -177,6 +177,7 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
           height: 117px;
           border-top-left-radius: 18px;
           border-top-right-radius: 18px;
+          object-fit: cover;
       }
       .info{
           display: flex;
@@ -187,26 +188,32 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
           padding: 5px;
           bottom: 0px;
           font-size: 12px;
-          p{color: #fff;}
+          p{color: #fff;font-size: 12px;}
           .rate{
-              border: 1px solid #fff;
-              color: #fff;
-              border-radius: 10px;
-              padding: 4px;
-              font-size: 11px;
+            border: 1px solid #fff;
+            color: #fff;
+            border-radius: 10px;
+            padding: 0;
+            width: 40px;
+            height: 18px;
+            text-align: center;
+            font-size: 8px;
+            line-height: 18px;
           }
       }
   }
   .content{
+      box-shadow: 0px 3px 9px #00000029;
       border-bottom-left-radius: 18px;
       border-bottom-right-radius: 18px;
       background-color: #fff;
       padding: 10px;
       color: #000;
+      h6{font-size: 14px;}
       span{
           color: #c7c7c7;
-          font-size: 11px;
-          &.location{font-size: 9px;}
+          font-size: 9px;
+          &.location{font-size: 7px;font-family: 'Almarai', sans-serif;}
       }
       i{color: #c7c7c7;}
       .flex{
@@ -214,12 +221,12 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
           justify-content: space-between;
           align-items: center;
           p{
-              font-size: 11px;
-              &:last-of-type{color: $main_color;}
+              font-size: 6px;
+              &:last-of-type{color: $main_color;font-size: 7px;}
           }
       }
       .price{
-          p{color: #000 !important;font-size: 15px;}
+          p{color: #000 !important;font-size: 16px !important;}
       }
       .times{
           padding: 5px 0;
@@ -234,6 +241,7 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
           border-radius: 0px 4px 0px 7px;
           font-size: 12px;
           transition: all 0.3s ease-in-out;
+          font-family: 'Almarai', sans-serif;
           &:hover{opacity: 0.9;}
       }
   }
@@ -250,9 +258,9 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
   border-radius: 10px;
   background-color: #fff7e3;
   border: 1px solid #f1e2d3;
-  h6{color: #f8c477;}
+  h6{color: #f8c477;font-size: 16px;}
   i{color: #f8c477;font-size: 20px;}
-  p{margin: 10px 0;}
+  p{margin: 10px 0;font-size: 14px;font-family: 'Almarai', sans-serif;}
   span{
       font-size: 10px;
       &:last-of-type{
@@ -267,9 +275,13 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
     height: 57px;
     margin-right: 10px;
   }
+  p{
+    font-size: 14px;
+    font-family: 'Almarai', sans-serif;
+  }
   a{
     color: $main_color;
-    font-size: 11px;
+    font-size: 10px;
     margin-top: 5px;
   }
 }
@@ -291,8 +303,8 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
     }
     .teacher-info{
       padding: 0 10px;
-      h6{font-size: 18px;font-weight: 600;}
-      p{color: #777777;}
+      h6{font-size: 16px;}
+      p{color: #777777;font-size: 12px;}
     }
   }
   .rate{
@@ -337,7 +349,8 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
     }
     .experince{
       color: #F44352;
-      font-size: 12px;
+      font-size: 10px;
+      font-family: 'Almarai', sans-serif;
     }
   }
 }
@@ -352,7 +365,7 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
     display: flex;
     margin: 15px 0;
     li{
-      font-size: 11px;
+      font-size: 14px;
       margin-left: 10px;
       color: #ACACAC;
       &.active{
@@ -375,6 +388,7 @@ $my_shadow: 0px 0px 12px -3px #e3e0e0;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
+    &::-webkit-scrollbar {display: none}
     .near-sets-item{
       width: 50%;
       min-width: 50%;
@@ -391,7 +405,7 @@ nav{
   left: 0;
   width: 100%;
   z-index: 999;
-  box-shadow: 0px 0px 11px 1px #b7b5b5;
+  box-shadow: 0px -6px 25px #1C283780;
   a{
     margin: 0 30px;
     color: #fff !important;
