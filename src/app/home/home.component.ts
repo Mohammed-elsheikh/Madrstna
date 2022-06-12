@@ -138,7 +138,32 @@ export class HomeComponent implements OnInit {
       color: '#754DCC'
     }
   ];
-  
+  subjectsRate:any[]=[
+    {
+      name: 'لغة عربية',
+      rate: 77,
+      houres: 12,
+      totalHoures: 16
+    },
+    {
+      name: 'لغة انجليزية',
+      rate: 46,
+      houres: 8,
+      totalHoures: 16
+    },
+    {
+      name: 'لغة فرنسية',
+      rate: 54,
+      houres: 10,
+      totalHoures: 16
+    },
+    {
+      name: 'فيزياء',
+      rate: 85,
+      houres: 15,
+      totalHoures: 16
+    }
+  ];
   filterValue: number = 0;
   constructor() { }
 

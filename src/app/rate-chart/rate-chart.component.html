@@ -1,11 +1,12 @@
-<div id="chart" *ngIf="chartOptions">
-    <apx-chart
-    style="width: 100%;"
-      [series]="chartOptions.series"
-      [chart]="chartOptions.chart"
-      [dataLabels]="chartOptions.dataLabels"
-      [plotOptions]="chartOptions.plotOptions"
-      [xaxis]="chartOptions.xaxis"
-    ></apx-chart>
+<div class="rate-content">
+  <div class="subject-info">
+      <p>{{subjectRate.name}}</p>
+      <span class="d-block">إجمالى ساعات الحضور</span>
+      <span>{{subjectRate.houres}}/{{subjectRate.totalHoures}}</span>
   </div>
-  
+  <div class="progress">
+      <div class="progress-bar" role="progressbar"
+      [style.width]="preparedRate"  aria-valuemin="0" aria-valuemax="100"></div>
+      <div [style.right]="preparedRate" class="rate-value">{{preparedRate}}</div>
+  </div>
+</div>

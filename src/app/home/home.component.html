@@ -1,11 +1,11 @@
 <section class="teachers section-sm">
         <div class="container">
             <h1 class="head-line">المجموعات المقترحة</h1>
-            <ngx-slick-carousel class="teachers-slider" 
-                        #slickModal="slick-carousel" 
+            <ngx-slick-carousel class="teachers-slider"
+                        #slickModal="slick-carousel"
                         [config]="slideConfig">
                 <div ngxSlickItem *ngFor="let teacher of teachers" class="slide">
-                    <app-cart [teacher]="teacher"></app-cart>
+                    <app-card [teacher]="teacher"></app-card>
                 </div>
             </ngx-slick-carousel>
         </div>
@@ -42,11 +42,11 @@
 <section class="popular section-sm">
     <div class="container">
         <h1 class="head-line">المدرسين الاكثر شعبية</h1>
-        <ngx-slick-carousel class="popular-teachers-slider" 
-            #slickModal="slick-carousel" 
+        <ngx-slick-carousel class="popular-teachers-slider"
+            #slickModal="slick-carousel"
             [config]="popularSlideConfig">
             <div ngxSlickItem *ngFor="let teacher of teachers" class="slide">
-                <app-popular-cart [teacher]="teacher"></app-popular-cart>
+                <app-popular-card [teacher]="teacher"></app-popular-card>
             </div>
         </ngx-slick-carousel>
     </div>
@@ -64,8 +64,8 @@
             <div class="near-sets-items">
                 <div class="near-sets-item" *ngFor="let teacher of sets"
                     [hidden]="teacher.subjectEnum!=filterValue && filterValue!=0">
-                    <app-cart [teacher]="teacher" class="tab-pane fade show active in">
-                    </app-cart>
+                    <app-card [teacher]="teacher" class="tab-pane fade show active in">
+                    </app-card>
                 </div>
             </div>
         </div>
@@ -75,6 +75,25 @@
     <div class="container">
         <h1 class="head-line">متابعة تقييم الاداء</h1>
         <p class="my-3">يمكنك الاطلاع على تقييم الاداء الخاص بك فى المجموعات الذى تم الاشتراك بها</p>
-        <app-rate-chart></app-rate-chart>
+        <div class="rate-table">
+          <div class="rate-head">
+              <p class="title">الاداء</p>
+              <div class="content">
+                  <p>0%</p>
+                  <p>25%</p>
+                  <p>50%</p>
+                  <p>75%</p>
+                  <p>100%</p>
+              </div>
+          </div>
+          <div class="position-relative">
+            <app-rate-chart *ngFor="let subjectRate of subjectsRate" [subjectRate]="subjectRate"></app-rate-chart>
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+            <div class="line line4"></div>
+          </div>
+        </div>
+      <a routerLink="" class="more-rates">للمزيد من الاداء الخاص بك ادخل هنا</a>
     </div>
 </section>

@@ -1,10 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-cart',
-  templateUrl: './cart.component.html'
+  selector: 'app-card',
+  templateUrl: './card.component.html'
 })
-export class CartComponent implements OnInit {
+export class CardComponent implements OnInit {
   @Input() teacher: any;
   public newRgba : any;
   constructor() { }

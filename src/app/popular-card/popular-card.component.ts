@@ -1,10 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-popular-cart',
-  templateUrl: './popular-cart.component.html'
+  selector: 'app-popular-card',
+  templateUrl: './popular-card.component.html'
 })
-export class PopularCartComponent implements OnInit {
+export class PopularCardComponent implements OnInit {
   @Input() teacher: any;
   constructor() { }
 
